@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Es Duren Lumer | Profile UMKM</title>
+    <!-- Tailwind CSS + Google Fonts + Font Awesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        /* custom smooth scroll & transitions */
+        html {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hover-scale {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .hover-scale:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.15);
+        }
+        .card-hover {
+            transition: all 0.25s ease;
+        }
+        .card-hover:hover {
+            background-color: #fef9e6;
+            border-left-width: 6px;
+            border-left-color: #f59e0b;
+        }
+        .btn-hover {
+            transition: all 0.2s ease;
+        }
+        .btn-hover:hover {
+            background-color: #0b5e42 !important;
+            transform: scale(0.98);
+        }
+        /* custom leaf/bg pattern subtle */
+        .bg-pattern-soft {
+            background-image: radial-gradient(circle at 10% 20%, rgba(46, 125, 50, 0.02) 2%, transparent 2.5%);
+            background-size: 28px 28px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-emerald-50 via-teal-50 to-blue-50 bg-pattern-soft">
 
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        
+        <!-- Header Section with fade-in -->
+        <div class="text-center mb-12 fade-in" style="animation-delay: 0s;">
+            <div class="inline-flex items-center justify-center bg-white/60 backdrop-blur-sm rounded-full px-5 py-2 shadow-sm border border-emerald-200 mb-4">
+                <i class="fas fa-store text-emerald-600 mr-2 text-sm"></i>
+                <span class="text-emerald-700 font-medium text-sm tracking-wide">UMKM BINAAN</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-800 tracking-tight">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-700 to-teal-600">Es Duren Lumer</span>
+            </h1>
+            <p class="text-gray-500 max-w-2xl mx-auto mt-4 text-base md:text-lg">Raja buah dengan sentuhan modern — sensasi durian premium dalam setiap suapan</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Kolom Kiri: Informasi Lengkap UMKM + Deskripsi + Jam Operasional -->
+            <div class="lg:col-span-2 space-y-6 fade-in" style="animation-delay: 0.1s;">
+                <!-- Kartu Info Bisnis -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-emerald-100 transition-all hover:shadow-xl">
+                    <div class="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4">
+                        <h2 class="text-white font-bold text-xl flex items-center gap-2"><i class="fas fa-building"></i> Profil UMKM</h2>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-tag text-emerald-500 mt-1 w-5"></i>
+                                <div><p class="text-xs text-gray-400 uppercase tracking-wide">Nama UMKM</p><p class="font-semibold text-gray-800 text-lg">ikyesduren</p></div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-user-circle text-emerald-500 mt-1 w-5"></i>
+                                <div><p class="text-xs text-gray-400 uppercase tracking-wide">Pemilik</p><p class="font-semibold text-gray-800 text-lg">irzqi mei Saputra</p></div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt text-emerald-500 mt-1 w-5"></i>
+                                <div><p class="text-xs text-gray-400 uppercase tracking-wide">Alamat Lengkap</p><p class="font-medium text-gray-700">Petamburan 07, Jakarta</p></div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fab fa-whatsapp text-green-600 mt-1 w-5"></i>
+                                <div><p class="text-xs text-gray-400 uppercase tracking-wide">No. HP / WhatsApp</p><p class="font-medium text-gray-700">089508354413</p></div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-envelope text-emerald-500 mt-1 w-5"></i>
+                                <div><p class="text-xs text-gray-400 uppercase tracking-wide">Email (opsional)</p><p class="font-medium text-gray-700 break-all">ieamaria229@gmail.com</p></div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-utensils text-amber-600 mt-1 w-5"></i>
+                                <div><p class="text-xs text-gray-400 uppercase tracking-wide">Kategori</p><p class="font-medium text-gray-700">Kuliner / Minuman & Pencuci Mulut (Dessert)</p></div>
+                            </div>
+                        </div>
+                        <div class="border-t border-emerald-100 pt-4 mt-2">
+                            <div class="flex gap-3">
+                                <i class="fas fa-align-left text-emerald-500 mt-1"></i>
+                                <div><p class="text-xs text-gray-400 uppercase tracking-wide">Deskripsi Usaha</p><p class="text-gray-700 leading-relaxed">Es Duren Lumer adalah destinasi kuliner bagi para pencinta raja buah yang mengutamakan kualitas dan kesegaran. Kami menyajikan daging durian asli pilihan yang dipadukan dengan es serut lembut dan berbagai topping premium. Fokus kami adalah menghadirkan sensasi makan durian yang praktis, higienis, dan tentu saja memanjakan lidah di setiap suapan.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu Jam Operasional & Info tambahan -->
+                <div class="bg-white rounded-2xl shadow-md border border-emerald-100 p-6 hover:shadow-lg transition">
+                    <div class="flex flex-wrap justify-between items-start gap-4">
+                        <div><i class="far fa-clock text-teal-600 text-2xl mr-2"></i><span class="font-bold text-gray-700 text-lg">Jam Operasional</span></div>
+                        <div class="bg-emerald-50 px-3 py-1 rounded-full text-emerald-700 text-sm font-medium"><i class="fas fa-store"></i> Buka Setiap Hari</div>
+                    </div>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="flex items-center gap-3 bg-gray-50 p-3 rounded-xl">
+                            <i class="fas fa-calendar-week text-emerald-600"></i>
+                            <div><span class="font-semibold">Senin – Jumat:</span> <span class="text-gray-600">10.00 – 21.00 WIB</span></div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-gray-50 p-3 rounded-xl">
+                            <i class="fas fa-calendar-weekend text-emerald-600"></i>
+                            <div><span class="font-semibold">Sabtu – Minggu:</span> <span class="text-gray-600">09.00 – 22.00 WIB</span></div>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-500 flex justify-end items-center gap-2"><i class="fas fa-mobile-alt"></i> Pesan antar / ambil di tempat hubungi WhatsApp</div>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Kontak + CTA Singkat, interaksi modern -->
+            <div class="space-y-6 fade-in" style="animation-delay: 0.2s;">
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center border border-emerald-100 hover-scale">
+                    <div class="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-3"><i class="fab fa-whatsapp text-3xl text-emerald-600"></i></div>
+                    <h3 class="font-bold text-gray-800 text-xl">Order via WhatsApp</h3>
+                    <p class="text-gray-500 text-sm mt-1">Klik tombol di bawah untuk memesan langsung</p>
+                    <a href="https://wa.me/6289508354413?text=Halo%20Es%20Duren%20Lumer%2C%20saya%20ingin%20order%20produk%20favorit%20" target="_blank" class="mt-4 inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-md btn-hover transition-all"><i class="fab fa-whatsapp"></i> Chat Admin</a>
+                </div>
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-5 border border-amber-200 text-center">
+                    <i class="fas fa-crown text-amber-500 text-2xl"></i>
+                    <p class="font-medium text-amber-800 mt-1">Signature : Es Duren Original</p>
+                    <p class="text-xs text-amber-700">Daging durian asli pilihan + es serut lembut</p>
+                </div>
+                <!-- mini badge lokasi -->
+                <div class="flex justify-center gap-3 flex-wrap">
+                    <span class="bg-white/70 backdrop-blur-sm px-3 py-1 rounded-full text-emerald-700 text-xs shadow-sm"><i class="fas fa-check-circle text-emerald-500"></i> Higienis</span>
+                    <span class="bg-white/70 backdrop-blur-sm px-3 py-1 rounded-full text-emerald-700 text-xs shadow-sm"><i class="fas fa-leaf text-emerald-500"></i> Durian Premium</span>
+                    <span class="bg-white/70 backdrop-blur-sm px-3 py-1 rounded-full text-emerald-700 text-xs shadow-sm"><i class="fas fa-truck"></i> Bisa Pesan Antar</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAFTAR PRODUK DENGAN HARGA DAN DESKRIPSI SINGKAT (Modern Card Grid) -->
+        <div class="mt-12 fade-in" style="animation-delay: 0.25s;">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="h-8 w-1 bg-gradient-to-b from-emerald-500 to-teal-400 rounded-full"></div>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Menu & Produk Andalan</h2>
+                <div class="flex-grow h-px bg-emerald-200 ml-4 hidden sm:block"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card Produk 1: Es Duren Original -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-emerald-50 hover-scale card-hover transition-all group">
+                    <div class="h-32 bg-gradient-to-r from-amber-200 to-yellow-300 flex items-center justify-center relative">
+                        <i class="fas fa-ice-cream text-5xl text-white drop-shadow-md"></i>
+                        <span class="absolute top-2 left-2 bg-emerald-700 text-white text-xs px-2 py-0.5 rounded-full">Signature</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-extrabold text-gray-800 text-xl">Es Duren Original</h3>
+                        <div class="flex items-center gap-2 mt-1"><i class="fas fa-tag text-emerald-500 text-sm"></i><span class="font-bold text-emerald-700 text-lg">Rp 15.000</span></div>
+                        <p class="text-gray-500 text-sm mt-2 leading-relaxed">Durian asli kental dengan es serut lembut, whipped cream & potongan durian utuh di atasnya.</p>
+                        <button class="mt-4 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium py-2 rounded-xl transition flex items-center justify-center gap-2"><i class="fab fa-whatsapp text-green-600"></i> Pesan Sekarang</button>
+                    </div>
+                </div>
+                <!-- Card Produk 2: Es Duren Spesial Keju -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-emerald-50 hover-scale card-hover">
+                    <div class="h-32 bg-gradient-to-r from-amber-300 to-orange-300 flex items-center justify-center">
+                        <i class="fas fa-cheese text-5xl text-white drop-shadow-md"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-extrabold text-gray-800 text-xl">Es Duren Spesial Keju</h3>
+                        <div class="flex items-center gap-2 mt-1"><i class="fas fa-tag text-emerald-500 text-sm"></i><span class="font-bold text-emerald-700 text-lg">Rp 18.000</span></div>
+                        <p class="text-gray-500 text-sm mt-2 leading-relaxed">Paduan durian creamy dengan parutan keju premium & topping meses, cocok untuk pencinta keju.</p>
+                        <button class="mt-4 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium py-2 rounded-xl transition flex items-center justify-center gap-2"><i class="fab fa-whatsapp text-green-600"></i> Pesan</button>
+                    </div>
+                </div>
+                <!-- Card Produk 3: Es Duren Ketan Hitam -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-emerald-50 hover-scale card-hover">
+                    <div class="h-32 bg-gradient-to-r from-purple-300 to-indigo-300 flex items-center justify-center">
+                        <i class="fas fa-seedling text-5xl text-white drop-shadow-md"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-extrabold text-gray-800 text-xl">Es Duren Ketan Hitam</h3>
+                        <div class="flex items-center gap-2 mt-1"><i class="fas fa-tag text-emerald-500 text-sm"></i><span class="font-bold text-emerald-700 text-lg">Rp 20.000</span></div>
+                        <p class="text-gray-500 text-sm mt-2 leading-relaxed">Perpaduan legit ketan hitam, santan, dan daging durian manis, sensasi tradisional modern.</p>
+                        <button class="mt-4 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium py-2 rounded-xl transition flex items-center justify-center gap-2"><i class="fab fa-whatsapp text-green-600"></i> Pesan</button>
+                    </div>
+                </div>
+                <!-- Card Produk 4: King Durian Shake -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-emerald-50 hover-scale card-hover">
+                    <div class="h-32 bg-gradient-to-r from-emerald-300 to-green-400 flex items-center justify-center">
+                        <i class="fas fa-blender text-5xl text-white drop-shadow-md"></i>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-extrabold text-gray-800 text-xl">King Durian Shake</h3>
+                        <div class="flex items-center gap-2 mt-1"><i class="fas fa-tag text-emerald-500 text-sm"></i><span class="font-bold text-emerald-700 text-lg">Rp 22.000</span></div>
+                        <p class="text-gray-500 text-sm mt-2 leading-relaxed">Minuman durian kocok dengan tekstur sangat kental, disajikan dengan whipped cream & potongan daging durian utuh di atasnya.</p>
+                        <button class="mt-4 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium py-2 rounded-xl transition flex items-center justify-center gap-2"><i class="fab fa-whatsapp text-green-600"></i> Pesan</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Price range note -->
+            <div class="text-center mt-6 text-gray-400 text-sm flex justify-center gap-2 flex-wrap"><span class="bg-white px-3 py-1 rounded-full shadow-sm"><i class="fas fa-coins text-amber-500"></i> Harga mulai dari Rp 15.000 - Rp 22.000</span><span class="bg-white px-3 py-1 rounded-full shadow-sm"><i class="fas fa-star text-yellow-400"></i> Nikmati promo spesial akhir pekan</span></div>
+        </div>
+
+        <!-- Highlight Produk Unggulan: Detail product utama (Es Duren Original & King Durian Shake) lebih eksplisit mention deskripsi singkat -->
+        <div class="mt-12 bg-gradient-to-r from-emerald-50/70 to-teal-50/70 rounded-2xl p-6 backdrop-blur-sm border border-emerald-200 fade-in" style="animation-delay: 0.3s;">
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <div class="flex-1 text-center md:text-left">
+                    <div class="badge bg-white w-fit mx-auto md:mx-0 px-3 py-1 rounded-full text-emerald-600 text-xs font-semibold mb-2"><i class="fas fa-crown text-amber-500"></i> Best Seller</div>
+                    <h3 class="text-2xl font-bold text-gray-800">King Durian Shake</h3>
+                    <p class="text-gray-600 mt-2 leading-relaxed">Minuman durian kocok dengan tekstur sangat kental, disajikan dengan whipped cream dan potongan daging durian utuh di atasnya. Sensasi mewah durian fresh!</p>
+                    <div class="mt-3 flex gap-3 justify-center md:justify-start"><span class="bg-white rounded-full px-3 py-1 shadow-sm text-emerald-700 text-sm"><i class="fas fa-check"></i> Durian Asli Pilihan</span><span class="bg-white rounded-full px-3 py-1 shadow-sm text-emerald-700 text-sm"><i class="fas fa-check"></i> Ekstra Topping</span></div>
+                    <a href="https://wa.me/6289508354413?text=Halo%2C%20saya%20mau%20pesan%20King%20Durian%20Shake%20favorit%20%F0%9F%8D%A7" class="inline-flex items-center gap-2 mt-5 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-xl font-semibold transition"><i class="fab fa-whatsapp"></i> Pesan King Durian Shake</a>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <div class="w-40 h-40 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-full flex items-center justify-center shadow-xl"><i class="fas fa-utensils text-6xl text-white"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map sederhana / lokasi dan embed virtual -->
+        <div class="mt-12 bg-white rounded-2xl shadow-md border border-emerald-100 overflow-hidden fade-in" style="animation-delay: 0.35s;">
+            <div class="px-6 py-4 bg-gray-50 border-b border-emerald-100 flex flex-wrap gap-2 justify-between items-center">
+                <div><i class="fas fa-map-pin text-emerald-600 mr-2"></i><span class="font-semibold">Lokasi & Kunjungan</span></div>
+                <span class="text-xs text-emerald-600 bg-emerald-100 px-2 py-1 rounded-full"><i class="fas fa-motorcycle"></i> Tersedia GoFood & Grab</span>
+            </div>
+            <div class="p-5 flex flex-wrap md:flex-nowrap gap-6 items-center">
+                <div class="flex-1 min-w-[150px]">
+                    <p class="font-medium text-gray-700"><i class="fas fa-location-dot text-red-500 mr-1"></i> Alamat: Petamburan 07, Jakarta (sekitar kawasan kuliner)</p>
+                    <p class="text-sm text-gray-500 mt-2">Nikmati sensasi durian lumer di tempat atau pesan antar. Buka setiap hari
